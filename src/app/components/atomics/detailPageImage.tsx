@@ -5,7 +5,7 @@ interface Props {
 }
 export default function DetailPageImage(props: Props) {
   return (
-    <div className="relative w-full h-[500px] m-auto">
+    <div className="relative w-full h-[500px] m-auto shadow-lg">
       <Image
         src={props.url}
         alt={props.title}
