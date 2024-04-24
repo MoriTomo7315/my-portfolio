@@ -1,4 +1,4 @@
-type VersionInfo = {
+type VersionDetail = {
   version: string;
   updateReason: string;
   details: string;
@@ -13,5 +13,9 @@ type Content = {
   imageUrl: string;
   systemDesignUrl: string;
   versions: string[];
-  versionDetails: VersionInfo[];
+  versionDetails: VersionDetail[];
 };
+
+interface UpdateInfos {
+  [key: string]: string;
+}
