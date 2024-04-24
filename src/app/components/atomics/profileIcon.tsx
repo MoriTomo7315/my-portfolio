@@ -7,6 +7,7 @@ export default function ProfileIcon() {
       width={200}
       height={200}
       className="rounded-full"
+      priority={true}
     />
   );
 }
