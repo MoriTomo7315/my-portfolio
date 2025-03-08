@@ -1,12 +1,14 @@
 import Link from "next/link";
+
 export default function ContactIconButton() {
   return (
     <div className="text-center">
-      <button className="p-4 w-50 border-solid border-2 hover:border-0 border-black  hover:bg-blue-500 hover:text-white">
-        <Link href="https://forms.gle/Eh9AFByKusFJqB5o9">
-          問い合わせはこちらから
-        </Link>
-      </button>
+      <Link 
+        href="https://forms.gle/Eh9AFByKusFJqB5o9"
+        className="inline-block px-10 py-5 text-lg font-semibold text-white bg-gradient-to-r from-sky-500 to-blue-500 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200"
+      >
+        問い合わせはこちらから
+      </Link>
     </div>
   );
 }
