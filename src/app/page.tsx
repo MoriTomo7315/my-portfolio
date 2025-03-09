@@ -8,16 +8,30 @@ import ContactIconButton from "./components/atomics/contactIconButton";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      <TopHeading />
-      <SectionTitle idName="app-gallery" title="App Gallerly" />
-      <AppGallery />
-      <SectionTitle idName="about-me" title="About Me" />
-      <AboutMeZone />
-      <SectionTitle idName="technology-stack" title="Technology Stack" />
-      <TechStackZone />
-      <SectionTitle idName="contact" title="Contact" />
-      <ContactIconButton />
+    <main className="min-h-screen max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="space-y-24">
+        <TopHeading />
+        
+        <section>
+          <SectionTitle idName="app-gallery" title="App Gallery" />
+          <AppGallery />
+        </section>
+
+        <section>
+          <SectionTitle idName="about-me" title="About Me" />
+          <AboutMeZone />
+        </section>
+
+        <section>
+          <SectionTitle idName="technology-stack" title="Technology Stack" />
+          <TechStackZone />
+        </section>
+
+        <section>
+          <SectionTitle idName="contact" title="Contact" />
+          <ContactIconButton />
+        </section>
+      </div>
     </main>
   );
 }

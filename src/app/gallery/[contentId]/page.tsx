@@ -1,11 +1,11 @@
-import GallerlyDetail from "@/app/components/templates/galleryDetail";
+import GalleryDetail from "@/app/components/templates/galleryDetail";
 import { GetContent } from "@/app/domains/repositories/contentRepository";
 
-export default function GallerlyDetailPage({
+export default function GalleryDetailPage({
   params,
 }: {
   params: { contentId: string };
 }) {
   const content = GetContent(params.contentId);
-  return <GallerlyDetail {...content} />;
+  return <GalleryDetail {...content} />;
 }
