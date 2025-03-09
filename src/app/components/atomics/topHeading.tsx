@@ -1,9 +1,11 @@
+import { HEADING_TEXTS } from "@/app/constants/texts";
+
 export default function TopHeading() {
   return (
     <div className="text-center my-32">
       <h1 className="relative inline-block">
         <span className="text-5xl md:text-6xl lg:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-sky-500 via-blue-500 to-indigo-500 animate-gradient-x">
-          I am a full-stack Engineer.
+          {HEADING_TEXTS.MAIN_TITLE}
         </span>
         <span className="absolute -bottom-4 left-0 right-0 h-1 bg-gradient-to-r from-sky-500 via-blue-500 to-indigo-500 transform scale-x-0 transition-transform duration-700 group-hover:scale-x-100" />
       </h1>

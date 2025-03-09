@@ -1,4 +1,5 @@
 import ProfileIcon from "../atomics/profileIcon";
+import { PROFILE_TEXTS } from "@/app/constants/texts";
 
 export default function AboutMeZone() {
   return (
@@ -8,15 +9,14 @@ export default function AboutMeZone() {
         <div className="text-center md:text-left space-y-4">
           <div className="space-y-2">
             <h3 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-sky-500 via-blue-500 to-purple-500">
-              森 友哉 | Tomoya Mori
+              {PROFILE_TEXTS.NAME}
             </h3>
             <p className="text-lg text-gray-600 dark:text-gray-300">
-              Age 29, Kanagawa, Japan
+              {PROFILE_TEXTS.LOCATION}
             </p>
           </div>
           <p className="max-w-md text-gray-600 dark:text-gray-300 leading-relaxed">
-            フルスタックエンジニアとして、モダンな技術を活用したWeb開発に情熱を注いでいます。
-            クリエイティブな問題解決とユーザー体験の向上を常に追求しています。
+            {PROFILE_TEXTS.DESCRIPTION}
           </p>
           <div className="flex justify-center md:justify-start gap-4 pt-2">
             <a

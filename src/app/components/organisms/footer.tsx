@@ -1,3 +1,5 @@
+import { FOOTER_TEXTS } from "@/app/constants/texts";
+
 export default function Footer() {
   return (
     <footer className="bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-950 border-t border-gray-100 dark:border-gray-800">
@@ -31,7 +33,7 @@ export default function Footer() {
           </div>
 
           <div className="text-sm text-gray-500 dark:text-gray-400">
-            © 2025 MoriTomo7315. All rights reserved.
+            {FOOTER_TEXTS.COPYRIGHT}
           </div>
         </div>
       </div>

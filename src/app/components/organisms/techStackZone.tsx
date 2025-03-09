@@ -3,6 +3,7 @@ import {
   CodeBracketIcon,
   ServerIcon,
 } from "@heroicons/react/24/outline";
+import { TECH_STACK_TEXTS } from "@/app/constants/texts";
 
 interface TechItem {
   name: string;
@@ -15,34 +16,25 @@ interface TechCategory {
 }
 
 export default function TechStackZone() {
+  const convertToTechItems = (skills: readonly string[]): TechItem[] => {
+    return skills.map(skill => ({ name: skill }));
+  };
+
   const techCategories: TechCategory[] = [
     {
-      title: "Frontend/Mobile",
+      title: TECH_STACK_TEXTS.FRONTEND.TITLE,
       icon: <CodeBracketIcon className="h-6 w-6" />,
-      skills: [
-        { name: "React.js" },
-        { name: "JavaScript/TypeScript" },
-      ],
+      skills: convertToTechItems(TECH_STACK_TEXTS.FRONTEND.SKILLS),
     },
     {
-      title: "Backend",
+      title: TECH_STACK_TEXTS.BACKEND.TITLE,
       icon: <ServerIcon className="h-6 w-6" />,
-      skills: [
-        { name: "Java, SpringBoot" },
-        { name: "Golang" },
-        { name: "Python, Django, Flask" },
-        { name: "Ruby, Ruby on Rails" },
-      ],
+      skills: convertToTechItems(TECH_STACK_TEXTS.BACKEND.SKILLS),
     },
     {
-      title: "Platform & Systems",
+      title: TECH_STACK_TEXTS.PLATFORM.TITLE,
       icon: <CommandLineIcon className="h-6 w-6" />,
-      skills: [
-        { name: "Docker/Kubernetes" },
-        { name: "Linux" },
-        { name: "AWS" },
-        { name: "GCP" },
-      ],
+      skills: convertToTechItems(TECH_STACK_TEXTS.PLATFORM.SKILLS),
     },
   ];
 
