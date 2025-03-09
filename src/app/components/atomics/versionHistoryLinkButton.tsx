@@ -4,7 +4,7 @@ export default function VersionHistoryLinkButton() {
   return (
     <div className="flex-shrink-0">
       <Link
-        href="https://github.com/MoriTomo7315/my-portfolio/releases"
+        href="/gallery/1/versionhistory"
         className="inline-flex items-center px-4 py-2 rounded-lg text-sm font-medium bg-gradient-to-r from-sky-500 to-blue-500 text-white hover:from-sky-600 hover:to-blue-600 transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
       >
         <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
